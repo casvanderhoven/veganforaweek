@@ -1,2 +1,20 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% provide(:title, "Vegan for a Week") %>
+
+
+<section class="first-row">
+
+<article class="info">
+<h1>Vegan for a Week</h1>
+<h2>I built this web app to make it easier for people like me, who have followed an animal-based diet for most of their lives, to try out the vegan life. You can view the recipes I've written, or you can create an account to get a meal plan tailored for you.</h2>
+
+I recently tried to follow a vegan diet for one week. My girlfriend had recently started eating vegan only, so I figured I would be supportive and join her. I liked it so much that I'm still doing it.
+</article> 
+
+<div class="signup">
+ <%= link_to "Sign up now!", signup_path %>
+</div>
+
+
+
+
+</section>

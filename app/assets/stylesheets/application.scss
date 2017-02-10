@@ -1,0 +1,11 @@
+@import "partials/_reset.css";
+
+@import "bourbon";
+@import "neat";
+@import "base/base";
+
+@import "partials/_home.scss";
+
+#main {
+	@include outer-container(1024px);
+}

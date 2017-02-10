@@ -1,0 +1,15 @@
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.first-row {
+  @include span-columns(12);
+}
+
+.info {
+  @include span-columns(6 of 12);
+}
+
+.sign-up {
+  @include span-columns(6 of 12);
+}
