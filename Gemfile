@@ -16,6 +16,8 @@ gem 'sqlite3'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Use Font Awesome for icons
+gem "font-awesome-rails"
 # Use Bourbon for SASS preprocessing
 gem 'bourbon'
 # Use Neat for grid system

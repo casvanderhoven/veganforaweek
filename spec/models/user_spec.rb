@@ -26,6 +26,11 @@ RSpec.describe User, type: :model do
   	expect(@user).not_to be_valid
   end
 
+  it "should have an integer as value" do 
+  	@user.servings = "a"
+  	expect(@user).not_to be_valid
+  end
+  
   it "should not have a name longer than 50 characters" do
   	@user.name = "a" * 51
   	expect(@user).not_to be_valid
@@ -76,4 +81,5 @@ RSpec.describe User, type: :model do
   	@user.password = @user.password_confirmation = "a" * 5
   	expect(@user).not_to be_valid
   end
+
 end

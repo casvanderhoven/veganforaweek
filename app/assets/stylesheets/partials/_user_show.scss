@@ -1,0 +1,16 @@
+.first-row {
+  @include span-columns(12);
+}
+
+.info {
+  @include span-columns(6 of 12);
+}
+
+.grocery-list {
+	@include span-columns(4 of 12);
+	@include shift(2 of 12);
+}
+
+.fa-li {
+	position: inherit;
+}

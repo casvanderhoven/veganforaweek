@@ -1,0 +1,27 @@
+<% provide(:title, @user.name) %>
+
+<section class="first-row">
+
+<article class="info">
+<h1>Hi, <%= @user.name %>!</h1>
+<h2>Are you ready to start your vegan week?</h2>
+
+You can view the recipes I've selected for you below. If you don't like a recipe, just click it to replace it with another one until you are satisfied! </br></br>
+
+On the right, you can see the grocery list for the full week.
+</article> 
+
+<div class="grocery-list">
+ <ul>
+ <h3>Grocery list</h3>
+ 	<%= content_tag(:li, fa_icon("square-o li", text: "Example item")) %>
+ 	<%= content_tag(:li, fa_icon("square-o li", text: "Example item")) %>
+ 	<%= content_tag(:li, fa_icon("square-o li", text: "Example item")) %>
+ 	<%= content_tag(:li, fa_icon("square-o li", text: "Example item")) %>
+ 	<%= content_tag(:li, fa_icon("square-o li", text: "Example item")) %>
+ 	<%= content_tag(:li, fa_icon("square-o li", text: "Example item")) %>
+ 	<%= content_tag(:li, fa_icon("square-o li", text: "Example item")) %>
+ 	<%= content_tag(:li, fa_icon("square-o li", text: "Example item")) %>
+ </ul>
+ </div>
+</section>

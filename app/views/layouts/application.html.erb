@@ -6,11 +6,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
   <div id="main">
+    <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "flash-#{message_type}") %>
+      <% end %>
+    
     <%= yield %>
+
+    <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
