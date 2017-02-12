@@ -1,0 +1,21 @@
+<% provide(:title, 'Edit profile') %>
+<% provide(:button_text, 'Save changes') %>
+<section class="first-row">
+
+<article class="info">
+<h1>Update your profile</h1>
+
+  <%= render 'partials/form' %>
+
+
+
+  
+</article>
+<article class="info">
+<h1>Delete your account</h1>
+We'd hate to see you go, but if you really want to delete your account, press the button below.
+
+</br></br>
+  <%= button_to "Delete your account", @user, method: :delete, data: { confirm: "Are you sure?" } %>
+</article>
+</section>

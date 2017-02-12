@@ -10,7 +10,12 @@
            <%= link_to(image_tag("logo.svg", alt: "logo"), root_url, class: "logo") %>
         </li>
         <% if logged_in? %>
-        <li class="nav-link"><%= link_to "Profile", current_user %></li>
+        <li id="js-centered-more" class="nav-link more">Account
+        <ul class="submenu">
+          <li><%= link_to "Profile", current_user %></li>
+          <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+          </ul>
+          </li>
         <li class="nav-link"><%= link_to "Log out", logout_path, method: "delete" %></li>
         <% else %>
         <li class="nav-link"><%= link_to "Log in", login_path %></li>
