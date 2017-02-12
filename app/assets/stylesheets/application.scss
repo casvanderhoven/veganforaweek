@@ -9,6 +9,9 @@
 @import "partials/_user_show.scss";
 @import "partials/_header.scss";
 
+body {
+  margin: 0;
+}
 #main {
 	@include outer-container(1024px);
 	padding: 0 15px;
