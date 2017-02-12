@@ -10,6 +10,7 @@
   </head>
 
   <body>
+  <%= render 'partials/header' %>
   <div id="main">
     <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "flash-#{message_type}") %>

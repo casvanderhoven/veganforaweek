@@ -7,6 +7,7 @@
 
 @import "partials/_home.scss";
 @import "partials/_user_show.scss";
+@import "partials/_header.scss";
 
 #main {
 	@include outer-container(1024px);
@@ -58,4 +59,13 @@ $flashes: (
 		border-color: tomato;
 	}
 
+}
+
+/* login form */
+
+/* grid */
+
+.login_form {
+  @include span-columns(6 of 12);
+  @include shift(3 of 12);
 }
